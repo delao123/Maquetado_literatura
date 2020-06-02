@@ -1,0 +1,94 @@
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    margin-top: 0px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #2e3a3cf5;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+#dropdownMenuLink {
+    width: 230px;
+    height: 55px;
+    padding-top: 18px;
+    background: linear-gradient(to right, #2193b0,#135463);
+    color: white;
+    font-size: initial;
+    margin-top: 40px;
+}
+.dropdown:not(.show-dropdown) .dropdown-menu .dropdown-item:hover, .dropdown:not(.show-dropdown) .dropdown-menu .dropdown-item:focus, .dropdown:not(.show-dropdown) .dropdown-menu .dropdown-item:active, .dropdown:not(.show-dropdown) .dropdown-menu li>a:hover, .dropdown:not(.show-dropdown) .dropdown-menu li>a:focus, .dropdown:not(.show-dropdown) .dropdown-menu li>a:active {
+    background: linear-gradient(to right, #2193b0,#135463);
+}
+
+.open>.dropdown-menu, .dropdown-menu.show {
+    display: block;
+    opacity: 0.9;
+    transform: scale(1);
+    margin-top: 0px;
+}
+
+.dropdown-item{
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: .8125rem;
+    border-radius: 0.125rem;
+    margin: 0 0.3125rem;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+    min-width: 7rem;
+    padding: 0.625rem 1.25rem;
+    overflow: hidden;
+    line-height: 1.428571;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+#sidebar  li .dropdown-menu a {
+    margin: 9px 15px;
+    border-radius: 3px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: capitalize;
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#sidebar i {
+    font-size: 24px;
+    float: left;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: white;
+}
+
+.btn-default{
+    background: linear-gradient(to right, #2193b0,#135463);
+    color: white;
+    border-color: white;
+}

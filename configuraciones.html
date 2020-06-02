@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 06</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+	<div class="container d-inline-flex m-0 p-0 align-items-stretch col">
+		<nav id="sidebar" class="img" style="background-image: url(images/bg_1.jpg);">
+			<div class="p-4">
+				<ul class="list-unstyled components mb-5">
+					<img class="logo" src="C:\Users\Servicio Social\Desktop\sidebar-06\sidebar-06\images\inbal_2019.png" width="200px">
+					<li class="nav-item dropdown">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="material-icons icons-menu">account_circle</i><span style="padding-right: 15px;">Participantes</span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Convocatorias Publicadas</a>
+							<a class="dropdown-item" href="#">Registro de Participación</a>
+							<a class="dropdown-item" href="#">Seguimiento a Folios <br> participántes</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <i class="material-icons icons-menu">account_balance</i><span style="padding-right: 15px;">Sede</span>
+						</a>
+					  
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						  <a class="dropdown-item" href="#">Tablero de Seguimiento a <br> registro de participáción</a>  
+						</div>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							style="height: 75px;
+								  text-align: center;">
+						  <i class="material-icons icons-menu" style="padding-bottom: 30px;">apartment</i><span style="padding-right: 15px; font-size: smaller;">Coordinación Nacional <br> De Literatura</span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						  <a class="dropdown-item" href="index.html">Registro de convocatorias</a>
+						  <a class="dropdown-item" href="#">Tablero de Seguimiento a <br> registro de participación</a>
+						  <a class="dropdown-item" href="#">Asignación de Juarado</a>
+						  <a class="dropdown-item" href="#">Publicación de Ganadores</a>
+						  <a class="dropdown-item" href="#">Reportes</a>
+						</div>
+					  </li>
+				</ul>
+			</div>
+		</nav>
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+		  <!-- Navbar -->
+		  <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="navbar-toggler-icon icon-bar"></span>
+				<span class="navbar-toggler-icon icon-bar"></span>
+				<span class="navbar-toggler-icon icon-bar"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-end">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<button class="btn btn-info btn-sm" data-toggle="modal" data-target="#ModalSesion">Iniciar Sesión</button>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		  <!-- End Navbar -->
+		<!-- Content -->
+		<div class="nav nav-tabs nav-fill mt-3" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link active" id="nav-generales-tab" data-toggle="tab" href="#nav-generales" role="tab" aria-controls="nav-generales" aria-selected="true">1.- Generales</a>
+			<a class="nav-item nav-link" id="nav-configuraciones-tab" data-toggle="tab" href="#nav-configuraciones" role="tab" aria-controls="nav-configuraciones" aria-selected="false">2.- Configuraciones</a>
+		  </div>
+		</nav>
+		<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+		  <div class="tab-pane fade show active" id="nav-generales" role="tabpanel" aria-labelledby="nav-generales-tab">
+			<h2 style="text-align: center;">Generales</h2>
+			<div class="modal-body">
+				<div class="form-group row">
+					<label for="tipo" class="col-sm-2 col-form-label">1.1 Tipo</label>
+					<div class="col-sm-10">
+						<select class="custom-select" id="tipo">
+							<option>Selecionar opción...</option>
+							<option>Obra Publicada</option>
+							<option>Obra Inédita</option>
+							<option>Trayectoria</option>
+						</select>
+					</div>
+				  </div>
+				  <div class="form-group row">
+					<label for="titulo" class="col-sm-2 col-form-label">1.2 Título</label>
+					<div class="col-sm-10">
+					  <input type="text" class="form-control" id="titulo">
+					</div>
+				  </div>
+				  <div class="form-group row">
+					<label for="acronimo" class="col-sm-2 col-form-label">1.3 Acrónimo</label>
+					<div class="col-sm-10">
+					  <input type="password" class="form-control" id="acronimo">
+					</div>
+				  </div>
+				  <div class="form-group row">
+					<label for="entidad" class="col-sm-2 col-form-label">1.4 Entidad Federativa</label>
+					<div class="col-sm-10">
+						<select class="custom-select" id="entidad">
+							<option>Selecionar opción...</option>
+							<option>Hidalgo</option>
+							<option>Edo. de México</option>
+							<option>Ciudad de México</option>
+						</select>
+					</div>
+				  </div>
+			</div>
+			</form>
+			
+		</div>
+		<!-- CONFIGURACIONES -->
+		<div class="tab-pane fade" id="nav-configuraciones" role="tabpanel" aria-labelledby="nav-configuraciones-tab">
+			<h2 style="text-align: center;">Editar Convocatorias</h2>
+			<form>
+			  <h4>Búsqueda</h4>
+			  <div  class="form-inline" id="arriba">
+				  <div style="width: 41%; display: flex;">
+					<label style="margin: 10px;" for="tipo">Fecha de :</label>
+					<select class="custom-select" id="tipo">
+						<option>Seleccionar opción</option>
+						<option>Publicación</option>
+						<option>Vigencia</option>
+					  </select>
+				  </div>
+				  <div class="float-right" style="display: flex;">
+					<label style="margin: 10px;" for="datetimepicker2">Fecha Inicio :</label>
+					<input  style="width: 100px" type="text" class="form-control mb-2 mr-sm-2" id="datetimepicker2">
+					<label style="margin: 10px;" for="datetimepicker3">Fecha Final :</label>
+					<input  style="width: 100px" type="text" class="form-control mb-2 mr-sm-2" id="datetimepicker3">
+				  </div>
+			  </div>
+			  <div class="form-inline" id="abajo" style="margin-top: 15px;">
+				<label style="margin: 10px;" for="tipo">Publicada :</label>
+				<select class="custom-select" id="tipo" style="width: 27%;">
+					<option>Seleccionar opción</option>
+					<option>Si</option>
+					<option>No</option>
+				  </select>
+			  </div>
+			  <div style="margin-top: 25px; width: 100%;">
+				<input type="button" class="btn btn-default float-right" value="Buscar" style="width: 200px; margin-bottom: 20px;">
+			  </div>
+			</form>
+			<hr style="border: 1px solid grey; margin-top: 80px;">
+			<div style="width: 100%;">
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-default btn-sm float-right" data-toggle="modal" data-target="#configuracionInedita">
+					Agregar
+				</button>
+			</div>
+			<table class="table table-striped">
+				<thead>
+				  <tr>
+					<th scope="col">Acción</th>
+					<th scope="col">Configuración</th>
+					<th scope="col">Vigencia</th>
+					<th scope="col">Publicada</th>
+					<th scope="col">Fecha de Publicación</th>
+					<th scope="col">Bases y Traducciones</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th><a href="#">Editar</a></th>
+					<td>1</td>
+					<td>Del 1/04/2021 al 01/05/2021</td>
+					<td>No</td>
+					<td> </td>
+					<td><button type="button" style="font-size: 13px;" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#addeBases">
+						Agregar Bases
+					  </button></td>
+				  </tr>
+				  <tr>
+					<th><a href="#">Editar</a></th>
+					<td>2</td>
+					<td>Del 1/04/2021 al 01/05/2021</td>
+					<td>No</td>
+					<td> </td>
+					<td><button type="button" style="width: 113px;" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#addeBases">
+						Editar
+					  </button></td>
+				  </tr>
+				</tbody>
+			  </table>
+		</div>
+		</div>
+		<!-- End Content-->
+	</div>
+	</div>
+	<!-- End Container -->
+<!-- Modal Iniciar Sesión -->
+<div class="modal fade" id="ModalSesion" tabindex="-1" role="dialog" aria-labelledby="ModalSesionLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div style="padding-top: 6px;">
+            <img src="https://inba.gob.mx/app/censo/assets/img/logo-inba_1.jpg">
+          </div>
+          <div style="padding-left: 105px;">
+            <img src="https://inba.gob.mx/app/censo/assets/img/logo-cultura_2.jpg" widht="169px" height="67px" align="right">
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="padding-top: 0;">
+          <div style="margin: 0px;">
+            <h3 style="margin: 0px;">Iniciar Sesión</h3>
+          </div>
+          <form method="POST" action="">
+              <div class="form-group inputWithIcon">
+                <label for="usuario">Usuario</label>
+                <input type="text" class="form-control" name="usuario" placeholder="Usuario" value="">
+                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+              </div>
+              <div class="form-group inputWithIcon">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" name="password" placeholder="Contraseña">
+                <i class="fa fa-key fa-lg fa-fw" aria-hidden="true"></i>
+              </div>
+              <input type="button" class="btn btn-info" value="Iniciar Sesión"> 
+            </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#">¿Has olvidado la constraseña?</a>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- End Modal-->
+    <!-- Modal Configración Obra Inedita -->
+  <div class="modal fade" id="configuracionInedita" tabindex="-1" role="dialog" aria-labelledby="configuracionIneditaTitle" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="configuracionIneditaTitle">Configuración</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="form-group row">
+				<div class="float-right" style="display: flex;">
+					<span style="margin: 10px;">2.1 Vigencia: </span>
+					<label style="margin: 10px;" for="datetimepicker4">Fecha Inicio :</label>
+					<input  style="width: 100px" type="text" class="form-control mb-2 mr-sm-2" id="datetimepicker4">
+					<label style="margin: 10px;" for="datetimepicker5">Fecha Final :</label>
+					<input  style="width: 100px" type="text" class="form-control mb-2 mr-sm-2" id="datetimepicker5">
+				  </div>
+			  </div>
+			  <div class="form-group row">
+					<label for="titulo" class="col-sm-2 col-form-label">2.2 Publicar</label>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="publicar" name="publicar" class="custom-control-input">
+						<label class="custom-control-label" for="publicar">Si</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="publicar2" name="publicar" class="custom-control-input">
+						<label class="custom-control-label" for="publicar2">No</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="titulo" class="col-sm-5 col-form-label">2.3 ¿Permite declarar el premio desierto?</label>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="premiodes" name="premiodes" class="custom-control-input">
+						<label class="custom-control-label" for="premiodes">Si</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="premiodes2" name="premiodes" class="custom-control-input">
+						<label class="custom-control-label" for="premiodes2">No</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="titulo" class="col-sm-5 col-form-label">2.4 ¿Permite menciones honoríficas?</label>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="honor" name="honor" class="custom-control-input">
+						<label class="custom-control-label" for="honor">Si</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="honor2" name="honor" class="custom-control-input">
+						<label class="custom-control-label" for="honor2">No</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="titulo" class="col-sm-5 col-form-label">2.5 ¿Requiere notario?</label>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="notario" name="notario" class="custom-control-input">
+						<label class="custom-control-label" for="notario">Si</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="notario2" name="notario" class="custom-control-input">
+						<label class="custom-control-label" for="notario2">No</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-5 col-form-label" style="margin-right: 325px;">2.6 Criterios automáticos del público objetivo</label><br>
+					<label for="edad" class="col-sm-2 col-form-label">2.6.1 Edad</label>
+					<div class="col-sm-4">
+						<select class="custom-select" id="edad">
+							<option>Selecionar opción...</option>
+							<option>Todos</option>
+							<option>Mayores de 56</option>
+						</select>
+					</div>
+					<label for="genero" class="col-sm-2 col-form-label">2.6.2 Genero</label>
+					<div class="col-sm-4">
+						<select class="custom-select" id="genero">
+							<option>Selecionar opción...</option>
+							<option>Femenino</option>
+							<option>Masculino</option>
+						</select>
+					</div>
+					<label for="paisNacer" class="col-sm-2 col-form-label" style="margin-top: 10px;">2.6.3 País de Nacimiento</label>
+					<div class="col-sm-4">
+						<select class="custom-select" style="margin-top: 10px;" id="paisNacer">
+							<option>Selecionar opción...</option>
+							<option>México</option>
+							<option>Canadá</option>
+						</select>
+					</div>
+					<label for="paisResi" class="col-sm-2 col-form-label" style="margin-top: 10px;">2.6.4 País de Residencia</label>
+					<div class="col-sm-4">
+						<select class="custom-select" id="paisResi" style="margin-top: 10px;">
+							<option>Selecionar opción...</option>
+							<option>México</option>
+							<option>Canadá</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-6 col-form-label" style="margin-right: 300px;">2.7 Criterios automáticos de la obra o propuesta</label>
+					<label for="titulo" class="col-sm-2 col-form-label">2.7.1 Lenguas </label>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Solo español</label>
+					  </div>
+					  <div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+						<label class="form-check-label" for="inlineCheckbox2">Lenguas Indigenes Nacionales (dentro del CLIN) </label>
+					  </div>
+					  <div class="form-check form-check-inline" style="margin-right: 215px">
+						<input class="form-check-input" style="margin-left:130px" type="checkbox" id="inlineCheckbox3" value="option3">
+						<label class="form-check-label" for="inlineCheckbox3">Lenguas de Señas Mexicana (LSM)</label>
+					  </div>
+					  <label for="postulado" class="col-sm-3 col-form-label">2.7.2 Recepción de Obras:</label>
+					  <div class="col-sm-4">
+						<select class="custom-select" id="postulado">
+							<option>Selecionar opción...</option>
+							<option>Digital</option>
+							<option>Correo Postal</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row" style="margin-top:20px;">
+					<label for="postulado" class="col-sm-3 col-form-label">2.8 ¿Quién postulo?</label>
+					<div class="col-sm-4">
+						<select class="custom-select" id="postulado">
+							<option>Selecionar opción...</option>
+							<option>Postulado (candidato)</option>
+							<option>Postulante (un tercero)</option>
+							<option>Ambos</option>
+						</select>
+					</div>
+				</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+		  <button type="button" class="btn btn-primary">Guardar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+	  <!-- End Modal-->
+
+  
+  <!-- Modal Agregar.Editar BASES -->
+  <div class="modal fade" id="addeBases" tabindex="-1" role="dialog" aria-labelledby="addeBasesLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="addeBasesLabel">Bases y Traducciones por configuración</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="float-right"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addArchivo">
+				Agregar
+			  </button></div>
+			<table class="table table-striped">
+				<thead>
+				  <tr>
+					<th scope="col">Acción</th>
+					<th scope="col">Archivo</th>
+					<th scope="col">Lengua</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th>Guardar Eliminar</th>
+					<td>01_02_español.pdf</td>
+					<td>Español</td>
+				  </tr>
+				</tbody>
+			  </table>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-primary">Aceptar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- END MODAL-->
+
+  <!-- Modal Cargar Archivos -->
+  <div class="modal fade" id="addArchivo" tabindex="-1" role="dialog" aria-labelledby="addArchivoLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="addArchivoLabel">Carga de archivos PDF</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div style="display: flex;">
+				<label style="margin: 10px;" for="idioma">Lengua: </label>
+				<select class="custom-select" id="idioma">
+					<option>Seleccionar opción</option>
+					<option>Español</option>
+					<option>Nahuatl</option>
+					<option>Maya</option>
+				  </select>
+			  </div>
+			  <div class="form-group" style="display: flex;">
+				<label for="archivo" class="col-sm-2 col-form-label" style="margin-top: 10px;">Archivo: </label>
+				<div class="col-sm-9">
+					<input type="file" class="form-control-file" id="archivo" style="margin-top: 10px;">
+				</div>
+			  </div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cacncelar</button>
+		  <button type="button" class="btn btn-primary">Guardar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+ <!-- DataTimePicker-->
+ <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css">
+ <script src="./js/jquery.datetimepicker.full.min.js"></script>  
+</html>
+	<script>
+	//Inicializar el plugin DataTimePicker(calendario)
+	$.datetimepicker.setLocale('es');
+	jQuery('#datetimepicker').datetimepicker({
+	 timepicker:false,
+	 format:'d/m/Y'
+	});
+	jQuery('#datetimepicker1').datetimepicker({
+	 timepicker:false,
+	 format:'d/m/Y'
+	});
+	jQuery('#datetimepicker2').datetimepicker({
+	 timepicker:false,
+	 format:'d/m/Y'
+	});
+	jQuery('#datetimepicker3').datetimepicker({
+	 timepicker:false,
+	 format:'d/m/Y'
+	});
+	jQuery('#datetimepicker4').datetimepicker({
+	 timepicker:false,
+	 format:'d/m/Y'
+	});
+	jQuery('#datetimepicker5').datetimepicker({
+	 timepicker:false,
+	 format:'d/m/Y'
+	});
+	</script>
